@@ -1,10 +1,10 @@
 # University Canteen Ordering System
 
 ## Project Information
-- Course: COMP3810sef / COMP3811F
-- Group: Group 1 (Update with your group number)
-- Members: [Your Name & SID], [Member 2 & SID], ... 
-- Deployed URL: https://comp3810sef-group1.onrender.com (Update after deployment)
+- Course: COMP3810sef 
+- Group: Group 26 (Update with your group number)
+- Members: [Yan Zihao 13316855],[Yao Jinghong 13415187]，[Ling Zhanyi 13252646],[Ling Zhanyi 13252646],[CHAU Chun Hei 13211603], [Yi mingyang 13405145]
+- Deployed URL: https://comp3810sef-group26-2.onrender.com/ 
 
 ## Features
 - Session-based login/logout with user registration (Cookie + express-session + bcryptjs encryption)
@@ -15,10 +15,10 @@
 - Complete RESTful API endpoints (GET/POST/PUT/DELETE)
 - MongoDB + Mongoose for data persistence
 - EJS templating for dynamic views
-- Advanced search with multiple conditions (name, category, price range, spicy) → Originality bonus achieved
+- Advanced search with multiple conditions (name, category, price range, spicy) 
 
 ## Login/Registration Credentials
-- Default Admin: Username `admin` / Password `comp3810` (legacy support)
+- Default Admin: Username `admin` / Password `comp3810` 
 - Register new admins at `/register` (passwords encrypted)
 
 ## RESTful API Endpoints
@@ -29,12 +29,7 @@
 | PUT    | /api/dishes/:id   | Update dish           | Yes           |
 | DELETE | /api/dishes/:id   | Delete dish           | Yes           |
 
-## API Testing Examples (using curl)
-```bash
-# GET all dishes
-curl http://localhost:3000/api/dishes
+All registered users have administrator privileges.
 
-# POST new dish (after login)
-curl -X POST http://localhost:3000/api/dishes \
-  -H "Content-Type: application/json" \
-  -d '{"name":"New Dish","category":"Main","price":{"student":10,"staff":15,"visitor":20}}'
+Public Menu API (no login required): https://comp3810sef-group26-2.onrender.com/api/dishes
+After logging in, you can use Edit/Delete on the webpage, or call the POST/PUT/DELETE API via Postman.
