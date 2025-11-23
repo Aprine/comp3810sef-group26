@@ -1,0 +1,23 @@
+<%- include('partials/header') %>
+
+<h2>Edit Dish</h2>
+
+<form action="/edit/<%= dish._id %>" method="POST">
+  <input type="text" name="name" value="<%= dish.name %>" required><br><br>
+  <input type="text" name="category" value="<%= dish.category %>" required><br><br>
+  <input type="text" name="description" value="<%= dish.description || '' %>"><br><br>
+  
+  <label><input type="checkbox" name="spicy" <%= dish.spicy ? 'checked' : '' %>> Spicy</label><br><br>
+
+  <fieldset>
+    <legend>Price (¥)</legend>
+    <input type="number" step="0.5" name="price[student]" value="<%= dish.price.student %>" required> Student<br><br>
+    <input type="number" step="0.5" name="price[staff]" value="<%= dish.price.staff %>" required> Staff<br><br>
+    <input type="number" step="0.5" name="price[visitor]" value="<%= dish.price.visitor %>" required> Visitor<br><br>
+  </fieldset>
+
+  <button type="submit">Update Dish</button>
+  <a href="/">Cancel</a>
+</form>
+
+<%- include('partials/footer') %>
