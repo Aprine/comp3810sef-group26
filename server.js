@@ -1,3 +1,10 @@
+console.log(' ');
+console.log('【调试】当前时间：', new Date().toISOString());
+console.log('【调试】MONGODB_URI =', process.env.MONGODB_URI ? '存在（长度' + process.env.MONGODB_URI.length + '）' : 'undefined');
+console.log('【调试】MONGO_URI =', process.env.MONGO_URI ? '存在（长度' + process.env.MONGO_URI.length + '）' : 'undefined');
+console.log('【调试】所有包含 MONGO 的环境变量：', Object.keys(process.env).filter(k => k.toUpperCase().includes('MONGO')));
+console.log(' ================================== ');
+
 const express = require('express');
 const mongoose = require('mongoose');
 const session = require('express-session');
