@@ -2,11 +2,6 @@
 
 <h2>Today's Menu</h2>
 
-<%- include('partials/header') %>
-
-<h2>Today's Menu</h2>
-
-<!-- 新增：搜索表单（加分项！） -->
 <div class="search-box">
   <form action="/" method="GET">
     <input type="text" name="name" placeholder="Dish name contains..." value="<%= query.name || '' %>">
