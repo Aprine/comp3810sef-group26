@@ -2,9 +2,9 @@
 
 ## Project Information
 - Course: COMP3810sef 
-- Group: Group 26 (Update with your group number)
-- Members: [Yan Zihao 13316855],[Yao Jinghong 13415187]，[Ling Zhanyi 13252646],[Ling Zhanyi 13252646],[CHAU Chun Hei 13211603], [Yi mingyang 13405145]
-- Deployed URL: https://comp3810sef-group26-2.onrender.com/ 
+- Group: Group 26
+- Members: [Yan Zihao 13316855],[Yao Jinghong 13415187],[Ling Zhanyi 13252646],[Ling Zhanyi 13252646],[CHAU Chun Hei 13211603], [Yi mingyang 13405145]
+- Deployed URL: https://comp3810sef-group26-3.onrender.com/ 
 
 ## Features
 - Session-based login/logout with user registration (Cookie + express-session + bcryptjs encryption)
@@ -31,5 +31,5 @@
 
 All registered users have administrator privileges.
 
-Public Menu API (no login required): https://comp3810sef-group26-2.onrender.com/api/dishes
+Public Menu API (no login required): https://comp3810sef-group26-3.onrender.com/api/dishes
 After logging in, you can use Edit/Delete on the webpage, or call the POST/PUT/DELETE API via Postman.
